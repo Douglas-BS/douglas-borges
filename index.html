@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="barra-navegacao">
+            <ul class="lista-navegacao">
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="botao-tema"></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="sobre-mim">
+            <img src="Design/perfil-douglas-cartoon.png" alt="Foto de Perfil em formato de cartoon" id="foto-perfil">
+            <div class="introducao">
+                <h1 class="nome">Douglas Borges</h1>
+                <p class="descricao">Olá! Eu sou o Douglas, um desenvolvedor maranhense de 20 anos, apaixonado pela cultura e história do meu estado. Amo desenvolver automações de processos e alguns designs. Me conheça um pouco mais abaixo:</p>
+            </div>
+        </div>
+        <section class="sobre-mim-cards">
+            <div class="card">
+                <h2 class="h2_card">Música Favorita</h2>
+                <div class="musica">
+                    <img src="Design/capa_musica.jpg" alt="Capa do álbum" class="album-cover">
+                    <div class="music-info">
+                        <h2 class="music-title">New Shoes</h2>
+                        <p class="artist-name">Paulo Nutini</p>
+                        <audio controls class="audio-player">
+                        <source src="Audio/NewShoes.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="h2_card">Hobbies</h2>
+                <div class="lista-hobbies">
+                    <ul>
+                        <li>Jogar jogos online</li>
+                        <li>Ler livros de ficção científica</li>
+                        <li>Jogar basquete</li>
+                        <li>Ouvir música</li>
+                        <li>Estudar novos idiomas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="h2_card">Tecnologias</h2>
+                <div class="tecnologias-usadas">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Abap</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <div class="curso1">
+                <img src="Design/logo-uninter.jpg" alt="logo uninter" class="imagem-formacao">
+                <div class="informacoes-curso">
+                    <h3>Bacharelado em Engenharia de Software</h3>
+                    <p>Centro Universitário Internacional - UNINTER</p>
+                    <p>Período: 2024 - Presente</p>
+                </div>
+            </div>
+            <h2>Idiomas</h2>
+            <div class="curso1">
+                <img src="Design/australia.jpeg" alt="bandeira australiana" class="imagem-formacao">
+                <div class="informacoes-curso">
+                    <h3>Inglês</h3>
+                    <p>Autodidata</p>
+                    <p>Nível: Avançado</p>
+                </div>
+            </div>
+            <div class="curso1">
+                <img src="Design/coreia.png" alt="bandeira da Coreia do Sul" class="imagem-formacao">
+                <div class="informacoes-curso">
+                    <h3>Coreano</h3>
+                    <p>Autodidata</p>
+                    <p>Nível: Intermediário</p>
+                </div>
+            </div>
+            <div class="curso1">
+                <img src="Design/colombia.png" alt="bandeira da Colômbia" class="imagem-formacao">
+                <div class="informacoes-curso">
+                    <h3>Espanhol</h3>
+                    <p>Autodidata</p>
+                    <p>Nível: Avançado</p>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="card-projeto">
+                <h3>Automação SAP</h3>
+                <p>No meu estágio atual desenvolvi algumas automações em VBA e SapGuiScripting para automatizar alguns processos de consulta e input de dados.</p>
+                <p>Com essas automações consegui reduzir significativamente o tempo de algumas tarefas ganhando performance nos processos da minha área</p>
+
+            </div>
+            <div class="card-projeto">
+                <h3>Automação na Web</h3>
+                <p>Ainda no estágio desenvolvi também automações em sites na web para preencher formulários. Usando Python com algumas bibliotecas consegui reduzir em mais de 50% o tempo de alguns processos. E isso sem custos para a área</p>
+                <p>Combinando as automações no SAP com as Webs ganhamos muita performance na área.</p>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="form-mensagem">
+                <p>Deixe sua mensagem abaixo.</p>
+                <form class="form-contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <button type="submit" id="botao-enviar">Enviar</button>
+                </form>
+            </div>
+    </main>
+</body>

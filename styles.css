@@ -1,0 +1,447 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Design/background.jpg');
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+header {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 20px;
+  position: fixed;
+  z-index: 1;
+  font-family: 'inter', sans-serif;
+}
+/* BARRA DE NAVEGAÇÃO */
+.barra-navegacao {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(50px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 15px 15px;
+  margin: 0.5% auto;
+  width: 680px;
+  max-width: 900px;
+  height: 40px;
+  border-radius: 15px;
+}
+.lista-navegacao {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.lista-navegacao li {
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ffffff;
+}
+.lista-navegacao a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 30px;
+  transition: color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+.lista-navegacao a:hover {
+  color: #2eff9d;
+}
+.lista-navegacao li:first-child {
+  padding-left: 0px;
+  margin-left: 20px;
+}
+.lista-navegacao li:last-child {
+  border-right: none;
+  padding: 0px;
+  margin: 10px;
+}
+
+/* SOBRE MIM */
+#sobre-mim {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 130px;
+  padding-bottom: 0px;
+  margin: 0;
+}
+#foto-perfil {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+
+}
+.introducao {
+  display: flex;
+  flex-direction: column;
+  padding-left: auto
+}
+.nome {
+  font-size: 28px;
+  color: #ffffff;
+}
+.descricao {
+  font-size: 16px;
+  color: #f0f0f0;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+/* PARTE PRINCIPAL */
+.sobre-mim-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 20px;
+  margin: 0px;
+  font-family: 'inter', sans-serif;
+  justify-content: center;
+  /*background-color: #000000;*/
+  /*background: linear-gradient(to bottom, #203C5A, #ffffff);*/
+}
+
+/*CARD MUSICA*/
+.h2_card {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}   
+.musica {
+  width: 280px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.album-cover {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.music-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px;
+  text-align: center;
+}
+.artist-name {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ebebeb;
+}
+.audio-player {
+  width: 220px;
+  height: 20px;
+  padding-bottom: 15px;
+}
+/*CARD HOBBIES*/
+.lista-hobbies {
+  width: 280px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid #ffffff;
+  border-radius: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.lista-hobbies ul {
+  list-style: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+}
+.lista-hobbies li {
+  background-color: rgba(188, 192, 196, 0.7);
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  margin: 0px 0px 15px 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/*CARD TECNOLOGIAS*/
+.tecnologias-usadas {
+  width: 280px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid #ffffff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tecnologias-usadas ul {
+  list-style: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+}
+.tecnologias-usadas li {
+  background-color: rgba(194, 196, 199, 0.5);
+  backdrop-filter: blur(60px);
+  color: #ffffff;
+  border: none;
+  padding: 15px 80px;
+  margin: 0px 0px 15px 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/** FORMAÇÃO **/
+#formacao {
+  font-family: 'inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 15px;
+  padding-top: 30px;
+}
+#formacao h2 {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.curso1 {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: left;
+  width: 90%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px); 
+  border: 1.5px solid #ffffff;
+  border-radius: 60px;
+}
+.curso1 h3, .curso1 p {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  list-style: none;
+
+}
+.imagem-formacao {
+  width: 100px;
+  height: 100px;
+  margin: 1% 10px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.informacoes-curso {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+/** PROJETOS **/
+#projetos {
+  font-family: 'inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 15px;
+  color: #ffffff;
+  text-align: left;
+  padding-top: 20px;
+}
+.card-projeto {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid #ffffff;
+  border-radius: 20px;
+  width: 90%;
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/** CONTATO **/
+#contato {
+  font-family: 'inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 150px;
+}
+#contato p {
+  text-align: center;
+}
+#contato label {
+  margin: 5px;
+}
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+} 
+.form-mensagem {
+  color: rgb(247, 247, 247);
+  height: 410px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+#nome, #email {
+  height: 15px;
+  background-color: rgba(125, 168, 175, 0.1);
+  backdrop-filter: blur(20px);
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+#mensagem{
+  height: 100px;
+  background-color: rgba(125, 168, 175, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+#nome:hover, #email:hover, #mensagem:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#botao-enviar {
+  background-color: rgba(125, 168, 175, 0.8);
+  margin-top: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#botao-enviar:hover {
+  background-color: rgba(56, 255, 162, 0.7);
+}
+.tema-claro {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.tema-claro .barra-navegacao,
+.tema-claro .musica,
+.tema-claro .lista-hobbies,
+.tema-claro .tecnologias-usadas,
+.tema-claro .curso1,
+.tema-claro .card-projeto,
+.tema-claro #nome,
+.tema-claro #email,
+.tema-claro #mensagem,
+.tema-claro .form-mensagem {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #2d004d;
+  border: 2px solid #000152;
+}
+.tema-claro .card,
+.tema-claro .card p,
+.tema-claro .curso1 p,
+.tema-claro .curso1 h3,
+.tema-claro .card-projeto,
+.tema-claro .introducao p,
+.tema-claro .introducao h1,
+.tema-claro .card h2,
+.tema-claro #contato h2,
+.tema-claro .form-mensagem {
+  color: #ffffff;
+}
+.tema-claro #projetos h3,
+.tema-claro #formacao h3,
+.tema-claro #projetos p,
+.tema-claro #formacao p{
+  color: #e2e2e2;
+}
+
+.tema-claro #sobre-mim {
+  background-color: rgba(0, 0, 0, 0.342);
+  color: #b1b1b1;
+}
+
+.tema-claro a {
+  color: #d1d1d1;
+}
+
+#botao-tema {
+  background-color: #ffffff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#botao-tema:hover {
+  background-color: #216844;
+}
